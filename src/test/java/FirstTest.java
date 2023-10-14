@@ -66,7 +66,7 @@ public class FirstTest {
         /*
         1. path
         2. jsonpath
-        3. deserilization
+        3. deserialization
         4. pojo
          */
 

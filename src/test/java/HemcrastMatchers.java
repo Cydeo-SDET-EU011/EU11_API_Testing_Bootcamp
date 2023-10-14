@@ -27,4 +27,19 @@ public class HemcrastMatchers {
                         "gender", not("Female"),
                         "phone", is(not(52)));
     }
+
+    @Test
+    public void test2() {
+        given().accept(ContentType.JSON)
+                .when().get("/api/spartans/1")
+                .then().statusCode(200)
+                .and().contentType("application/json")
+                .and().body("id", is(1),
+                        "name", equalTo("Meade"),
+                        "gender", not("Female"),
+                        "phone", is(not(52)))
+                .extract().response().prettyPrint();
+    }
+
+
 }
