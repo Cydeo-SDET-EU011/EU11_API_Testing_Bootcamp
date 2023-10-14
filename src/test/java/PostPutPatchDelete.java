@@ -52,6 +52,5 @@ public class PostPutPatchDelete {
 
         assertThat(201,equalTo(response.statusCode()));
 
-        ///  curl
     }
 }
